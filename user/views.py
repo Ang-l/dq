@@ -6,6 +6,7 @@ from rest_framework import filters
 
 from user.serializers import UserSerializer
 from user.models import Users
+from user.pages import Pagination
 
 
 class UserView(viewsets.ModelViewSet):
@@ -14,3 +15,4 @@ class UserView(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     search_fields = ['username']
     filterset_fields = ['is_deleted']
+    pagination_class = Pagination
