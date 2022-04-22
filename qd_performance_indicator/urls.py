@@ -21,5 +21,6 @@ from qd_performance_indicator import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('indicator/',include('app01.urls')),
+    path('users/', include('user.urls')),
     path('login', views.login, name="登录视图"),
 ]

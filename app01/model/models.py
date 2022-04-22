@@ -1,19 +1,5 @@
 from django.db import models
 
-#定义用户模型类User_login
-class User_login(models.Model):
-    username = models.CharField(max_length=20,verbose_name='用户名')
-    password = models.CharField(max_length=20,verbose_name='密码')
-    is_admin = models.CharField(max_length=1,default=0,verbose_name='是否为管理员，1：是，0：不是')
-
-    class Meta:
-        db_table = 'user_login'
-        verbose_name = '用户登录表'
-        verbose_name_plural = verbose_name
-
-    def __str__(self):
-        return self.username
-
 #定义关键业绩指标定义模型类key_performance_indicator _dingyi
 class Key_Performance_indicator_dingyi(models.Model):
     assessment_latitude =  models.CharField(max_length=255,verbose_name='考核维度')
