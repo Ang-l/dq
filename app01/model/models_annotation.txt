@@ -1,0 +1,94 @@
+'''
+###### 这是定义模型类 ######
+#关键业绩指标定义模型类key_performance_indicator _dingyi
+考核维度    assessment_latitude
+指标名称    index_name
+考核要素    key_test
+基础分值    basic_score
+报送周期    submit_the_cycle
+评价部门    evaluation_department
+定义和计算公式 define_design_formulas
+评价标准    evaluation_criterion
+
+#专业评价指标定义模型类pofessional_evaluation_index_dingyi
+考核部门    inspection_department
+专业名称    pofessional_name
+减分依据    points_based_on
+
+
+#红线指标定义模型类red_indicator_dingyi
+考核部门    inspection_department
+指标名称    index_name
+评分依据    grading
+
+#安全管理工作定义模型类safety_management_dingyi
+考核部门    inspection_department
+减分依据    points_based_on
+
+#党建综合考评定义模型类party_building_dingyi
+考核部门    inspection_department
+考核事项    inspection_items
+
+
+
+******************************************
+###### 这是关系图谱模型类 ######
+#安全管理工作图谱模型类tupu_safety_management
+责任部门    responsible_department
+清单类型    list_type
+2022年目标     annual_objectives   #年度目标
+支撑部门及单位     supporting_departments_units
+共性目标    common_goals
+个性目标    personality_goal
+具体措施    concrete_measure
+具体措施数量  concrete_measure_sum
+
+#党建综合考评图谱模型类tupu_pary_building
+责任部门    responsible_department
+考核事项    inspection_items
+清单类型    list_type
+2022年目标     annual_objectives   #年度目标
+支撑部门及单位     supporting_departments_units
+共形目标    common_goals
+个性目标    personality_goal
+具体措施    concrete_measure
+具体措施数量  concrete_measure_sum
+
+#关键业绩指标图谱模型类tupu_key_performance_indicator
+责任部门    responsible_department
+指标名称    index_name
+考核事项    inspection_items
+考核周期    performance_appraisal_cycle
+指标权重    index_weight
+清单类型    list_type
+2022年完成值   complete_value
+2022年目标     annual_objectives   #年度目标
+支撑部门及单位     supporting_departments_units
+共性目标    common_goals
+个性目标    personality_goal
+具体措施    concrete_measure
+具体措施数量  concrete_measure_sum
+
+#红线指标图谱模型类red_indicator
+责任部门    responsible_department
+指标名称    index_name
+支撑部门及单位     supporting_departments_units
+共性目标    common_goals
+个性目标    personality_goal
+具体措施    concrete_measure
+具体措施数量  concrete_measure_sum
+
+#专业评价指标图谱模型类professional_evaluation_index
+责任部门    responsible department
+专业名称    pofessional_name
+清单类型    list_type
+2022年目标     annual_objectives   #年度目标
+支撑部门及单位     supporting_departments_units
+共性目标    common_goals
+个性目标    personality_goal
+具体措施    concrete_measure
+具体措施数量  concrete_measure_sum
+
+'''
+
+
